@@ -3,26 +3,29 @@
 <head>
 	<title></title>
 <style type="text/css">
-	.Sami{
-	width: 700px;
-	height:1000px;
-	background-image: url(Sami.png)
+
+	
 	
 
-	}
+	
 </style>
 
 </head>
 <body>
 	<script type="text/javascript">
 		function makeSami () {
-			var Sami = document.createElement('div')
-			document.body.appendChild(Sami);
-			Sami.classList.add("Sami");
+			var sami = document.createElement("div")
+			document.body.appendChild(sami);
+			sami.style.height = "1300px";
+			sami.style.width = "2000px"
+			sami.style.backgroundImage = "url(sami.png)"
+			sami.addEventListener("click", function(){
+				sami.style.backgroundImage = "url(unnamed-7.jpg)"
+			})
 
 	
 		}
-		document.addEventListener("click",makeSami)
+		setInterval(makeSami, 250);
 
 	</script>
 
