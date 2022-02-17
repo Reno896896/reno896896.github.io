@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<style type="text/css">
+		
+		#box{
+			width:1418px;
+			height:805px;
+			border:1px solid black;
+			font-family:'Bebas Neue', cursive;
+			background-color: red;
+			font-size: 75px;
+		}
+		#header{
+			font-size: 150px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+
+	 
+		<div id="box">
+
+			<a id="link" href=""></a>
+	</div> 
+
+
+	<script type="text/javascript">
+
+
+		var artists = ["Cringy ASMR", "Food ASMR", "Fanta Drinking ASMR", "Father", "Sleep ASMR"]
+
+		var links = ["joker.html", "food.html", "drink.html", "godsell.html", "sleep.html"]
+
+		function pickThings () {
+		var x = Math.round(Math.random()*4);
+
+		link.innerText = artists[x];
+		link.href=links[x];
+		console.log(artists[x])
+		console.log(links[x])
+
+
+		}
+
+		pickThings()
+
+		
+	</script>
+
+</body>
+</html>
