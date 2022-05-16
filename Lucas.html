@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<style type="text/css">
+		
+		#box{
+			width:1418px;
+			height:805px;
+			border:1px solid black;
+			font-family:'Bebas Neue', cursive;
+			background-color: red;
+			font-size: 75px;
+			top: 300px;
+		}
+		#header{
+			font-size: 150px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+
+	 <center>
+		<div id="box">
+
+			<a id="link" href=""></a>
+	</div> 
+
+</center>
+	<script type="text/javascript">
+
+
+		var artists = ["Do you have a schedule for social media posting?", "Have you found that different posting schedules accumulate more views and followers/subsribers for different platforms?", "What are your favorite sport teams?", "Do you consider yourself an influencer, a commentator, or both?", "When did you first see yourself commentating in the future?", "How long have you known Duece?", "What are your favorite sports to play in order and also favorite sports to watch in order?", "Do you have relationships with many professional athletes?", "What sport are you most knowledgeable about?", "How long do you envision yourself continuing with social media and if presumably not forever what do you think is the next step?"]
+
+		var links = ["joker.html", "food.html", "drink.html", "godsell.html", "sleep.html"]
+
+		function pickThings () {
+		var x = Math.round(Math.random()*9);
+
+		link.innerText = artists[x];
+		link.href=links[x];
+		console.log(artists[x])
+		console.log(links[x])
+
+
+		}
+
+		pickThings()
+
+		
+	</script>
+
+</body>
+</html>

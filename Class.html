@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+
+		.virus{
+			background-image: url("download.png");
+			width:300px;
+			height:300px;
+			position:absolute;
+			background-size:contain;
+			background-repeat: no-repeat;
+			
+		}
+	</style>
+</head>
+<body>
+
+	<audio id="sound" src="DaBaby.mp3"> </audio>
+		
+	
+	<script type="text/javascript">
+		var pew = document.getElementById('sound'); //this gets an html element that has the id called sound//
+		// var input = document.getElementById('input'); //this gets an html element that has the id called sound//
+		var x = 0;
+
+
+		//this funciton makes the divs//
+		function createCorona() {
+			var corona = document.createElement('div');
+			document.body.appendChild(corona);
+			corona.classList.add("virus");
+			
+				function changePosition() {
+			
+				corona.style.left = 1000 * Math.random() + "px";
+				corona.style.top = 1000 * Math.random() + "px";
+
+			}
+
+
+			corona.addEventListener("click", function()
+		{
+			console.log("hi");
+			x = x + 1;
+			// input.innerText = x;
+			corona.classList.remove("virus");
+			sound.play()
+		})
+		setInterval(changePosition, 800)
+			// body...
+		}
+		setInterval(createCorona, 800);
+	</script>
+	
+
+</body>
+</html>
